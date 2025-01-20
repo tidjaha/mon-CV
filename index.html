@@ -48,13 +48,22 @@
             text-decoration: underline;
         }
      
-                        .profile-photo img {
-        width: 200px; /* Réduit la largeur */
-        height: 200px; /* Maintient les proportions */
-        border-radius: 8px; /* Optionnel : coins arrondis */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optionnel : effet ombre */
-    }
-                 
+                        .profile-container {
+    display: flex;
+    align-items: center; /* Aligne verticalement au centre */
+    justify-content: flex-start; /* Aligne à gauche de l'image */
+}
+
+.profile-photo {
+    width: 300px; /* Ajustez selon la taille de l'image */
+    height: 300px; /* Ajustez selon la taille de l'image */
+    margin-right: 10px; /* Espace entre l'image et le texte */
+}
+
+.profile-info {
+    font-family: Arial, sans-serif;
+    /* Autres styles pour le profil */
+}
         
     </style>  
 <style>
