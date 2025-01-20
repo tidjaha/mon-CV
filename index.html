@@ -80,14 +80,11 @@
         
     </style>  
 <style>
-        /* Mise en page de la page principale */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Conteneur des logos côté gauche */
+        .logos-container {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 50px; /* Espace après le contenu principal */
+            }
         .background-left,
         .background-right {
             position: fixed; 
@@ -147,22 +144,20 @@
         font-size: 18px;
     }
              .logos-container {
-            position: static; /* Plus de positionnement fixe */
             display: flex;
-            flex-direction: row;
-            justify-content: center;
             flex-wrap: wrap;
-            margin-top: auto; /* Assure que les logos se placent après le contenu */
+            justify-content: center;
+            margin-top: 20px;
         }
 
         .background-left,
         .background-right {
-            flex-direction: row; /* Réorganise les logos horizontalement */
+            flex-direction: row; /* Mettre les logos en ligne horizontale */
         }
 
         .background-left img,
         .background-right img {
-            height: 60px;
+            height: 50px;
             margin: 10px;
         }
     }
