@@ -83,7 +83,7 @@
             display: flex; /* Utilisation de Flexbox */
             flex-direction: column; /* Aligne les logos verticalement */
             align-items: center; /* Centre horizontalement dans le conteneur */
-            z-index: -1; /* Place les logos en arrière-plan */
+            z-index: 1; /* Place les logos en arrière-plan */
         }
 
         .background-left {
@@ -97,8 +97,8 @@
         /* Style des images */
         .background-left img,
         .background-right img {
-            width: 60px; /* Taille des logos */
-            height: auto; /* Conserve les proportions */
+            width: auto; /* Taille des logos */
+            height: 80px; /* Conserve les proportions */
             margin: 20px 0; /* Espacement entre les logos */
             opacity: 0.5; /* Transparence pour l'arrière-plan */
             transition: opacity 0.3s, transform 0.3s; /* Animation pour les interactions */
