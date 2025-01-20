@@ -7,29 +7,27 @@
 
      <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(to right, #006e3a, #0056a0);
-            color: white;
-            padding: 1rem 0;
-            
-            
-            max-width: 1200px; 
-    width: 90%;
-        }
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+       header {
+    text-align: center; /* Centrer le texte */
+    padding: 1rem;
+    background: linear-gradient(to right, #006e3a, #0056a0);
+    color: white;
+    max-width: 100%;
+}
+
+main {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
         section {
             margin-bottom: 2rem;
         }
@@ -127,6 +125,32 @@
             transform: scale(1.1); /* Agrandit légèrement le logo */
         }
     </style>
+    @media (max-width: 768px) {
+    header {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .background-left img,
+    .background-right img {
+        height: 60px;
+    }
+
+    main {
+        padding: 1rem;
+        max-width: 95%;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        position: static; /* Annule le positionnement absolu */
+        text-align: center;
+        font-size: 18px;
+    }
+}
 </head>
 <body>
 <body>
