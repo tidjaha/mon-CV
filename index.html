@@ -90,16 +90,13 @@
         /* Conteneur des logos côté gauche */
         .background-left,
         .background-right {
-            position: fixed; /* Fixé sur les bords */
-            top: 50%; /* Centre verticalement */
-            transform: translateY(-50%); /* Ajuste le centrage parfait */
-            display: flex; /* Utilisation de Flexbox */
-            flex-direction: column; /* Aligne les logos verticalement */
-            align-items: center; /* Centre horizontalement dans le conteneur */
-            z-index: 1; /* Place les logos en arrière-plan */
-            
-    justify-content: center;
-    gap: 10px;
+            position: fixed; 
+            top: 50%; 
+            transform: translateY(-50%); 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            z-index: 1; 
         }
 
         .background-left {
@@ -134,11 +131,7 @@
         margin: 0;
     }
 
-    .background-left img,
-    .background-right img {
-        height: 60px;
-    }
-
+   
     main {
         padding: 1rem;
         max-width: 95%;
@@ -152,6 +145,19 @@
         position: static; /* Annule le positionnement absolu */
         text-align: center;
         font-size: 18px;
+    }
+            .background-left img,
+    .background-right img {
+        height: 40px; /* Réduire la taille des logos */
+        margin: 10px 0;
+    }
+
+    .background-left {
+        left: 5px; /* Ajuster le positionnement sur petit écran */
+    }
+
+    .background-right {
+        right: 5px;
     }
 }
     </style>
