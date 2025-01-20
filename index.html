@@ -146,19 +146,21 @@
         text-align: center;
         font-size: 18px;
     }
-            .background-left img,
-    .background-right img {
-        height: 40px; /* Réduire la taille des logos */
-        margin: 10px 0;
-    }
+            .background-left,
+        .background-right {
+            position: static;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap; /* Permet de répartir les logos sur plusieurs lignes si nécessaire */
+            margin: 20px 0; /* Ajoute de l'espace autour des logos */
+        }
 
-    .background-left {
-        left: 5px; /* Ajuster le positionnement sur petit écran */
-    }
-
-    .background-right {
-        right: 5px;
-    }
+        .background-left img,
+        .background-right img {
+            height: 60px;
+            margin: 10px; /* Réduit l'espacement entre les logos */
+            opacity: 1;
+        }
 }
     </style>
 </head>
