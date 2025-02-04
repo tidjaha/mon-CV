@@ -157,7 +157,12 @@
     </style>
 </head>
 <body>
-
+    <div class="language-selection" id="language-selection">
+        <h1>Choisissez votre langue / Select your language</h1>
+        <button onclick="showCV('fr')">Français</button>
+        <button onclick="showCV('en')">English</button>
+    </div>
+<div id="cv-fr" style="display: none;">
          <header><h4>tidjaha JAN 25<h4></header>
     <main>
 
@@ -420,9 +425,20 @@
             <img src="uppa.gif">
         </a>
     </div>
+             </div>
 
    
         </main>
+            <script>
+        function showCV(language) {
+            document.getElementById('language-selection').style.display = 'none';
+            if (language === 'fr') {
+                document.getElementById('cv-fr').style.display = 'block';
+            } else {
+                document.getElementById('cv-en').style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
 
