@@ -77,6 +77,25 @@
     font-family: Arial, sans-serif;
     /* Autres styles pour le profil */
 }
+          
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: black;
+            margin: auto;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    
         
     </style>  
 <style>
@@ -168,11 +187,14 @@
          <header><h4>tidjaha JAN 25<h4></header>
     <main>
 
+        <div class="video-container">
            <iframe height="360" width="640" 
                 src="https://www.youtube.com/embed/SGmbS96ZVs4" 
                 frameborder="0" 
                 allowfullscreen>
             </iframe>
+</div>
+            
         <h3>CURRICULUM VITAE</h3>
 
         <section class="profile-section">
