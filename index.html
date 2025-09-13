@@ -754,18 +754,15 @@
 </body>
 <script>
 <script>
-    function showCV(lang) {
-        
-        document.getElementById("language-selection").style.display = "none";
 
-        
-        if (lang === "fr") {
-            document.getElementById("cv-fr").style.display = "block";
-            
-        } else if (lang === "en") {
-            document.getElementById("cv-en").style.display = "block";
 
-        }
+    function showCV(lang) { document.getElementById("language-selection").style.display = "none"; 
+                           
+        if (lang === "fr") 
+           { document.getElementById("cv-fr").style.display = "block"; } 
+        else 
+          { document.getElementById("cv-en").style.display = "block"; }
+
     }
 </script>
 
