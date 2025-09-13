@@ -762,14 +762,42 @@
 </body>
 
 <script> 
+
+    function setLogosVisibility(show) {
+  document.querySelectorAll('.background-left, .background-right').forEach(el => {
+    // on met 'flex' ou 'none' en inline, mais seulement quand c'est nécessaire
+    el.style.display = show ? 'flex' : 'none';
+  });
+}
+
+/* ajuste selon la largeur actuelle */
+function adjustLogosOnResize() {
+  const isSmall = window.innerWidth < 768;
+  // on veut cacher les logos si petit écran
+  if (isSmall) {
+    setLogosVisibility(false);
+  } else {
+    // si écran large, on affiche seulement si un CV est visible
+    const frVisible = document.getElementById('cv-fr').style.display === 'block';
+    const enVisible = document.getElementById('cv-en').style.display === 'block';
+    setLogosVisibility(frVisible || enVisible);
+  }
+}
+
     function showCV(language) 
          { document.getElementById('language-selection').style.display = 'none'; 
     if (language === 'fr') 
     { document.getElementById('cv-fr').style.display = 'block'; } 
     else { document.getElementById('cv-en').style.display = 'block'; } 
+
+          adjustLogosOnResize();
          } 
 
+window.addEventListener('resize', adjustLogosOnResize);
+/* au chargement de la page aussi */
+window.addEventListener('load', adjustLogosOnResize);
 
+    
 </script>
 
 </html>
