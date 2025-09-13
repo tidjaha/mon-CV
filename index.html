@@ -114,22 +114,11 @@
         }
 
         @media (max-width: 768px) {
-                .logos-container {
-                    flex-direction: column;   /* les logos passent les uns en dessous des autres */
-                    align-items: center;
-                    gap: 20px; /* espace entre eux */
-                }
-            
-                .background-left,
-                .background-right {
-                    position: static;   /* plus de fixed sur mobile */
-                    transform: none;
-                    flex-direction: row; /* si tu veux les aligner en ligne */
-                    justify-content: center;
-                    margin: 10px 0;
-                }
-            }
-
+          .background-left,
+          .background-right {
+            display: none;
+          }
+        }
         .background-left {
             left: 0; /* Positionné à gauche */
         }
