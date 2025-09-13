@@ -750,17 +750,20 @@
 </div>
 </body>
 <script>
-        function showCV(language) {
-            document.getElementById('language-selection').style.display = 'none';
-            if (language === 'fr') {
-                document.getElementById('cv-fr').style.display = 'block';
-            } else {
-                document.getElementById('cv-en').style.display = 'block';
-            }
-                document.querySelector(".background-left").style.display = "flex";
-    document.querySelector(".background-right").style.display = "flex";
+function showCV(lang) {
+    document.getElementById("language-selection").style.display = "none";
 
-        }
+    if (lang === "fr") {
+        document.getElementById("cv-fr").style.display = "block";
+    } else {
+        document.getElementById("cv-en").style.display = "block";
+    }
+
+    
+    document.querySelector(".background-left").style.display = "flex";
+    document.querySelector(".background-right").style.display = "flex";
+}
+
 </script>
 
 </html>
