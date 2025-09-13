@@ -96,9 +96,7 @@
             height: 100%;
         }
     
-        
-    </style>  
-<style>
+   
         .logos-container {
                 display: flex;
                 justify-content: space-between;
@@ -114,6 +112,23 @@
             align-items: center; 
             z-index: 1; 
         }
+
+        @media (max-width: 768px) {
+                .logos-container {
+                    flex-direction: column;   /* les logos passent les uns en dessous des autres */
+                    align-items: center;
+                    gap: 20px; /* espace entre eux */
+                }
+            
+                .background-left,
+                .background-right {
+                    position: static;   /* plus de fixed sur mobile */
+                    transform: none;
+                    flex-direction: row; /* si tu veux les aligner en ligne */
+                    justify-content: center;
+                    margin: 10px 0;
+                }
+            }
 
         .background-left {
             left: 0; /* Positionné à gauche */
@@ -174,23 +189,7 @@
     }
 }
 
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; 
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            background: black;
-            margin: auto;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+        
         
     </style>
 </head>
