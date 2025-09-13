@@ -207,7 +207,7 @@
   <img src="https://hitwebcounter.com/counter/counter.php?page=YOUR_NEW_ID&style=0006&nbdigits=5&type=ip&initCount=0" alt="Compteur de visites">
       
 </a>
-         <header><h4>tidjaha JAN 25<h4></header>
+         <header><h4>tidjaha JAN 25</h4></header>
     <main>
 
         <div class="video-container">
@@ -233,7 +233,7 @@
             <div class="profile-info">
                 
                 
-    </section>
+    
         
         <section>
             <h2>Résumé professionnel</h2>
@@ -399,7 +399,7 @@
                 <li><strong>- Stage sur Hysys Process</strong> chez BRC (de Mars à Mai 2005)</li>
                 <li>Simulation d'une unité de déshydratation du gaz naturel.</li>
 
-                <li><strong>- Présentation de l’AIE lors de la journée de l’énergie à l’Hôtel Hilton Algérie.<strong></li>
+                <li><strong>- Présentation de l’AIE lors de la journée de l’énergie à l’Hôtel Hilton Algérie.</strong></li>
 
             </ul>
 </section>
@@ -440,7 +440,8 @@ Fort de ces expériences, j’ai choisi de me lancer dans l’entrepreneuriat  e
              </ul>
         </section>
     
-                
+                </div>
+                </section>
     <!-- Logos à gauche -->
     <div class="background-left">
         <a href="https://www.sap.com/mena/index.html" target="_blank">
@@ -454,6 +455,7 @@ Fort de ces expériences, j’ai choisi de me lancer dans l’entrepreneuriat  e
         </a>
         <a href="https://www.henkel.com/" target="_blank">
             <img src="Henkel-Logo.svg.png">
+            </a>
         <a href="https://www.enp.edu.dz/fr/" target="_blank">
             <img src="Logo-ENP.png">
         <a href="http://www.gs-automation.com/fr/index.html" target="_blank">
@@ -489,7 +491,7 @@ Fort de ces expériences, j’ai choisi de me lancer dans l’entrepreneuriat  e
    <div id="cv-en" style="display: none;">
        <a href="https://www.hitwebcounter.com" target="_blank">
   <img src="https://hitwebcounter.com/counter/counter.php?page=YOUR_NEW_ID&style=0006&nbdigits=5&type=ip&initCount=0" alt="Compteur de visites">                
-         <header><h4>tidjaha FEB 25<h4></header>
+         <header><h4>tidjaha FEB 25</h4></header>
     <main>
 
         <div class="video-container">
@@ -515,7 +517,7 @@ Fort de ces expériences, j’ai choisi de me lancer dans l’entrepreneuriat  e
 <div class="profile-info">
                 
                 
-    </section>
+    
         
         <section>
             <h2>Summary</h2>
@@ -710,7 +712,7 @@ Fort de ces expériences, j’ai choisi de me lancer dans l’entrepreneuriat  e
                 <li><a href="https://repository.enp.edu.dz/jspui/handle/123456789/5474" target="_blank">My final project in 2005</a></li>
              </ul>
         </section>
-    
+    </div>
                 
     <!-- Logos à gauche -->
     <div class="background-left">
@@ -733,7 +735,7 @@ Fort de ces expériences, j’ai choisi de me lancer dans l’entrepreneuriat  e
         
         </a>
     </div>
-
+</section>
     <!-- Logos à droite -->
     <div class="background-right">
         <a href="https://www.labo-nedjma.com/" target="_blank">
@@ -756,6 +758,7 @@ Fort de ces expériences, j’ai choisi de me lancer dans l’entrepreneuriat  e
         </a>
     </div>
              </div>
+            </div>
             
         </main>
             <script>
