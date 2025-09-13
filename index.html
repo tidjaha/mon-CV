@@ -140,6 +140,12 @@
     </style>
     <style>
     @media (max-width: 768px) {
+
+    .background-left,
+  .background-right {
+    display: none;
+  }
+
     header {
         padding: 1rem;
         margin: 0;
@@ -160,10 +166,7 @@
         font-size: 18px;
     }
 
-    .background-left,
-    .background-right {
-        display: none !important; /* forcé */
-    }
+  
 }
 
         
@@ -750,19 +753,22 @@
 </div>
 </body>
 <script>
-function showCV(lang) {
-    document.getElementById("language-selection").style.display = "none";
+<script>
+    function showCV(lang) {
+        
+        document.getElementById("language-selection").style.display = "none";
 
-    if (lang === "fr") {
-        document.getElementById("cv-fr").style.display = "block";
-    } else {
-        document.getElementById("cv-en").style.display = "block";
+        
+        if (lang === "fr") {
+            document.getElementById("cv-fr").style.display = "block";
+            document.getElementById("cv-en").style.display = "none";
+        } else if (lang === "en") {
+            document.getElementById("cv-en").style.display = "block";
+            document.getElementById("cv-fr").style.display = "none";
+        }
     }
+</script>
 
-    
-    document.querySelector(".background-left").style.display = "flex";
-    document.querySelector(".background-right").style.display = "flex";
-}
 
 </script>
 
